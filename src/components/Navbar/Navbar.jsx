@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from '../../assets/logo/ERFAN DESIGN ISTIAK LOGO-01.png'
 
 
 const Navbar = () => {
@@ -25,7 +26,10 @@ const Navbar = () => {
                        }
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <div>
+                    <img src={logo} alt="" className='h-20' />
+                    <h2 className='font-bold text-2xl text-center'>Istiak</h2>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-5">
@@ -35,7 +39,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Resume</a>
+                <a href='resume.pdf' download className="btn">Resume</a>
             </div>
         </div>
     );
